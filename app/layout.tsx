@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navigation from '@/components/Navigation'
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   preload: true,
@@ -11,24 +11,23 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'AI Content Pro - AI Content Marketing Expert',
-  description: 'Professional AI-driven content marketing specialist creating impactful digital strategies.',
-  keywords: ['AI Content Marketing', 'Content Strategy', 'AI Tools', 'Digital Marketing', 'Content Creation'],
-  authors: [{ name: 'AI Content Pro' }],
-  creator: 'AI Content Pro',
+  title: '陈琦 - 内容运营专家',
+  description: '8年内容运营经验，专注内容营销增长、用户运营、账号孵化',
+  keywords: ['内容运营', '内容营销', '账号孵化', '小红书', '知乎', '直播运营'],
+  authors: [{ name: '陈琦' }],
+  creator: '陈琦',
   openGraph: {
     type: 'website',
-    locale: 'en_US',
-    url: 'https://your-domain.com',
-    title: 'AI Content Pro - Content Marketing Expert',
-    description: 'Showcasing AI-driven content marketing projects and professional expertise',
-    siteName: 'AI Content Pro',
+    locale: 'zh_CN',
+    url: 'https://chenhe-777.github.io/cqweb',
+    title: '陈琦 - 内容运营专家',
+    description: '内容营销增长、用户运营、账号孵化实战经验分享',
+    siteName: '陈琦的个人网站',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AI Content Pro - Content Marketing Expert',
-    description: 'Showcasing AI-driven content marketing projects and professional expertise',
-    creator: '@yourhandle',
+    title: '陈琦 - 内容运营专家',
+    description: '内容营销增长、用户运营、账号孵化实战经验分享',
   },
   robots: {
     index: true,
@@ -49,7 +48,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="zh-CN" suppressHydrationWarning>
       <body className={inter.className}>
         <Navigation />
         <main className="pt-16 lg:pt-20">
@@ -58,14 +57,11 @@ export default function RootLayout({
         <footer className="bg-bg-light-secondary dark:bg-bg-dark-secondary py-8 mt-16">
           <div className="container-custom">
             <div className="text-center text-text-light-secondary dark:text-text-dark-secondary">
-              <p>&copy; 2024 AI Content Pro. All rights reserved.</p>
-              <p className="mt-2 text-sm">
-                Built with Next.js and AI tools ❤️
-              </p>
+              <p>&copy; {new Date().getFullYear()} 陈琦. 保留所有权利.</p>
             </div>
           </div>
         </footer>
       </body>
     </html>
   )
-} 
+}

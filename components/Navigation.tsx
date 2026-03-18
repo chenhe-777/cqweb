@@ -8,11 +8,11 @@ import { Menu, X } from 'lucide-react'
 import ThemeToggle from './ThemeToggle'
 
 const navItems = [
-  { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' },
-  { name: 'Portfolio', href: '/portfolio' },
-  { name: 'Blog', href: '/blog' },
-  { name: 'Contact', href: '/contact' },
+  { name: '首页', href: '/' },
+  { name: '关于', href: '/about' },
+  { name: '作品集', href: '/portfolio' },
+  { name: '博客', href: '/blog' },
+  { name: '联系', href: '/contact' },
 ]
 
 export default function Navigation() {
@@ -36,8 +36,8 @@ export default function Navigation() {
     <motion.nav
       className={`
         fixed top-0 left-0 right-0 z-50 transition-all duration-300
-        ${scrolled 
-          ? 'bg-bg-light/80 dark:bg-bg-dark/80 backdrop-blur-md shadow-lg' 
+        ${scrolled
+          ? 'bg-bg-light/80 dark:bg-bg-dark/80 backdrop-blur-md shadow-lg'
           : 'bg-transparent'
         }
       `}
@@ -52,13 +52,13 @@ export default function Navigation() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-                         <Link
-               href="/"
-               className="text-2xl font-heading font-bold text-primary dark:text-primary-dark hover:opacity-80 transition-opacity"
-               onClick={closeMenu}
-             >
-               AI Content Pro
-             </Link>
+            <Link
+              href="/"
+              className="text-2xl font-heading font-bold text-primary dark:text-primary-dark hover:opacity-80 transition-opacity"
+              onClick={closeMenu}
+            >
+              陈琦
+            </Link>
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -78,7 +78,7 @@ export default function Navigation() {
                 {item.name}
                 {pathname === item.href && (
                   <motion.div
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary dark:bg-primary-dark"
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary dark:bg-primary:dark"
                     layoutId="navbar-indicator"
                     transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                   />
@@ -165,4 +165,4 @@ export default function Navigation() {
       </div>
     </motion.nav>
   )
-} 
+}

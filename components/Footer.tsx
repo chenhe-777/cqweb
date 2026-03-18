@@ -7,11 +7,11 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   const quickLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Portfolio', href: '/portfolio' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Contact', href: '/contact' },
+    { name: '首页', href: '/' },
+    { name: '关于', href: '/about' },
+    { name: '作品集', href: '/portfolio' },
+    { name: '博客', href: '/blog' },
+    { name: '联系', href: '/contact' },
   ]
 
   const socialLinks = [
@@ -27,20 +27,20 @@ export default function Footer() {
           {/* Contact Information */}
           <div>
             <h3 className="text-lg font-heading font-semibold text-text-light dark:text-text-dark mb-4">
-              Contact Information
+              联系信息
             </h3>
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-text-light-secondary dark:text-text-dark-secondary">
                 <Mail size={18} />
-                <span>hello@aicontentpro.com</span>
+                <span>your-email@example.com</span>
               </div>
               <div className="flex items-center gap-3 text-text-light-secondary dark:text-text-dark-secondary">
                 <Phone size={18} />
-                <span>+1 (555) 123-4567</span>
+                <span>18868852007</span>
               </div>
               <div className="flex items-center gap-3 text-text-light-secondary dark:text-text-dark-secondary">
                 <MapPin size={18} />
-                <span>San Francisco, CA</span>
+                <span>浙江杭州</span>
               </div>
             </div>
           </div>
@@ -48,7 +48,7 @@ export default function Footer() {
           {/* Quick Links */}
           <div>
             <h3 className="text-lg font-heading font-semibold text-text-light dark:text-text-dark mb-4">
-              Quick Links
+              快速链接
             </h3>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
@@ -67,7 +67,7 @@ export default function Footer() {
           {/* Social Media */}
           <div>
             <h3 className="text-lg font-heading font-semibold text-text-light dark:text-text-dark mb-4">
-              Follow Me
+              关注我
             </h3>
             <div className="flex gap-4">
               {socialLinks.map((social) => {
@@ -85,7 +85,7 @@ export default function Footer() {
               })}
             </div>
             <p className="text-text-light-secondary dark:text-text-dark-secondary text-sm mt-4">
-              Let's connect and build something amazing together!
+              期待与你的合作！
             </p>
           </div>
         </div>
@@ -93,10 +93,10 @@ export default function Footer() {
         {/* Copyright */}
         <div className="border-t border-gray-200 dark:border-gray-700 mt-8 pt-8 text-center">
           <p className="text-text-light-secondary dark:text-text-dark-secondary text-sm">
-            © {currentYear} AI Content Pro. All rights reserved. Built with ❤️ using Next.js
+            © {currentYear} 陈琦. 保留所有权利.
           </p>
         </div>
       </div>
     </footer>
   )
-} 
+}

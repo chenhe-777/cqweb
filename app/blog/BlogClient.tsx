@@ -9,7 +9,7 @@ const POSTS_PER_PAGE = 6
 
 export default function BlogClient() {
   const [searchQuery, setSearchQuery] = useState('')
-  const [selectedCategory, setSelectedCategory] = useState('All Articles')
+  const [selectedCategory, setSelectedCategory] = useState('全部文章')
   const [currentPage, setCurrentPage] = useState(1)
   const [isLoading, setIsLoading] = useState(true)
   const [isTransitioning, setIsTransitioning] = useState(false)
@@ -19,7 +19,7 @@ export default function BlogClient() {
     let filtered = blogPosts
 
     // Filter by category
-    if (selectedCategory !== 'All Articles') {
+    if (selectedCategory !== '全部文章') {
       filtered = filtered.filter(post => post.category === selectedCategory)
     }
 
@@ -160,10 +160,10 @@ export default function BlogClient() {
           <div className="container-custom">
             <div className="text-center max-w-3xl mx-auto">
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-                Blog & Insights
+                博客与洞察
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300">
-                Sharing knowledge about web development, AI, digital marketing, and technology trends
+                分享关于内容运营、AI应用、数字营销和技术趋势的知识
               </p>
             </div>
           </div>
@@ -224,7 +224,7 @@ export default function BlogClient() {
                 </div>
                 <input
                   type="text"
-                  placeholder="Search articles, topics, or tags..."
+                  placeholder="搜索文章、主题或标签..."
                   value={searchQuery}
                   onChange={(e) => handleSearchChange(e.target.value)}
                   className="block w-full pl-10 pr-10 py-3 border border-gray-300 rounded-lg leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:border-gray-600 dark:text-white transition-all duration-200"
@@ -264,7 +264,7 @@ export default function BlogClient() {
           <div className="mt-6 text-sm text-gray-600 dark:text-gray-400">
             {filteredPosts.length > 0 ? (
               <span>
-                {filteredPosts.length} article{filteredPosts.length !== 1 ? 's' : ''} found
+                找到 {filteredPosts.length} 篇文章
                 {searchQuery && (
                   <span> for "{searchQuery}"</span>
                 )}
@@ -273,7 +273,7 @@ export default function BlogClient() {
                 )}
               </span>
             ) : (
-              <span>No articles found. Try adjusting your search or filters.</span>
+              <span>没有找到文章。请尝试调整搜索条件或过滤器。</span>
             )}
           </div>
         </div>
@@ -284,7 +284,7 @@ export default function BlogClient() {
         <div className="container-custom">
           {isTransitioning ? (
             <div className="flex justify-center py-12">
-              <LoadingSpinner size="lg" text="Loading articles..." />
+              <LoadingSpinner size="lg" text="正在加载文章..." />
             </div>
           ) : paginatedPosts.length > 0 ? (
             <div className="space-y-8">
@@ -370,20 +370,20 @@ export default function BlogClient() {
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
-                            <span>{post.readTime} min read</span>
+                            <span>阅读 {post.readTime} 分钟</span>
                           </div>
                           <div className="flex items-center gap-1">
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                             </svg>
-                            <span>{post.views.toLocaleString()} views</span>
+                            <span>{post.views.toLocaleString()} 次浏览</span>
                           </div>
                           <div className="flex items-center gap-1">
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                             </svg>
-                            <span>{post.comments} comments</span>
+                            <span>{post.comments} 条评论</span>
                           </div>
                         </div>
 
@@ -391,7 +391,7 @@ export default function BlogClient() {
                           href={`/blog/${post.slug}`}
                           className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium text-sm transition-colors duration-200"
                         >
-                          Read More
+                          阅读更多
                           <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                           </svg>
@@ -405,19 +405,19 @@ export default function BlogClient() {
           ) : (
             <div className="text-center py-12">
               <div className="text-6xl mb-4 animate-bounce">🔍</div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">No articles found</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">没有找到文章</h3>
               <p className="text-gray-600 dark:text-gray-400 mb-6">
-                Try adjusting your search terms or browse different categories.
+                请尝试调整搜索条件或浏览不同分类。
               </p>
               <button
                 onClick={() => {
                   setSearchQuery('')
-                  setSelectedCategory('All Articles')
+                  setSelectedCategory('全部文章')
                   setCurrentPage(1)
                 }}
                 className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200 transform hover:scale-105"
               >
-                Clear all filters
+                清除所有筛选
               </button>
             </div>
           )}
@@ -484,7 +484,7 @@ export default function BlogClient() {
 
             {/* Page Info */}
             <div className="text-center mt-4 text-sm text-gray-600 dark:text-gray-400">
-              Showing {((currentPage - 1) * POSTS_PER_PAGE) + 1} to {Math.min(currentPage * POSTS_PER_PAGE, filteredPosts.length)} of {filteredPosts.length} articles
+              显示第 {((currentPage - 1) * POSTS_PER_PAGE) + 1} 至 {Math.min(currentPage * POSTS_PER_PAGE, filteredPosts.length)} 条，共 {filteredPosts.length} 篇文章
             </div>
           </div>
         </section>

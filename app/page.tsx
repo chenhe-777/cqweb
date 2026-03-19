@@ -40,10 +40,10 @@ export default function HomePage() {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-text-light dark:text-text-dark mb-4">
-              My Expertise
+              我的专长
             </h2>
             <p className="text-lg text-text-light-secondary dark:text-text-dark-secondary max-w-2xl mx-auto">
-              Combining technical skills with creative vision to deliver exceptional results
+              结合专业技能与创意思维，提供卓越成果
             </p>
           </div>
           

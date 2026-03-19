@@ -2,9 +2,9 @@ import { Metadata } from 'next'
 import BlogClient from './BlogClient'
 
 export const metadata: Metadata = {
-  title: 'Blog & Insights - Alex Chen',
-  description: 'Sharing knowledge about web development, AI, digital marketing, and technology trends.',
-  keywords: 'blog, web development, AI, digital marketing, programming, tutorials',
+  title: '博客与洞察 - 陈琦',
+  description: '分享关于内容运营、AI应用、数字营销和技术趋势的知识。',
+  keywords: '博客, 内容运营, AI, 数字营销, 编程, 教程',
 }
 
 export default function BlogPage() {

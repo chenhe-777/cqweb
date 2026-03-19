@@ -15,12 +15,12 @@ export async function generateMetadata({ params }: PortfolioDetailPageProps): Pr
   
   if (!item) {
     return {
-      title: 'Project Not Found - AI Content Pro'
+      title: '项目未找到 - AI内容运营专家'
     }
   }
 
   return {
-    title: `${item.title} - AI Content Pro`,
+    title: `${item.title} - AI内容运营专家`,
     description: item.description,
     keywords: item.tags,
   }

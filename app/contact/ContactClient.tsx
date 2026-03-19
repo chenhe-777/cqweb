@@ -82,7 +82,7 @@ export default function ContactClient() {
                     <div>
                       <h3 className="font-semibold text-[#111827] dark:text-text-dark mb-2">邮箱</h3>
                       <p className="text-[#4B5563] dark:text-text-dark-secondary">
-                        your-email@example.com
+                        1246738072@qq.com
                       </p>
                       <p className="text-sm text-[#4B5563] dark:text-text-dark-secondary mt-1">
                         最适合项目咨询
@@ -345,7 +345,7 @@ export default function ContactClient() {
                 我在这里帮助你！随时联系我进行免费咨询。
               </p>
               <a
-                href="mailto:your-email@example.com"
+                href="mailto:1246738072@qq.com"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-[#1E3A8A] hover:bg-blue-800 text-white rounded-lg font-semibold transition-all duration-300"
               >
                 预约电话

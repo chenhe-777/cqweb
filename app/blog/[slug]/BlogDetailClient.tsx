@@ -36,7 +36,7 @@ export default function BlogDetailClient({ post }: BlogDetailClientProps) {
   }
 
   const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleDateString('en-US', {
+    return new Date(dateString).toLocaleDateString('zh-CN', {
       year: 'numeric',
       month: 'long',
       day: 'numeric'
@@ -117,14 +117,14 @@ export default function BlogPage({ params }: { params: { id: string } }) {
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
-                <span className="font-medium text-sm">Back to Blog</span>
+                <span className="font-medium text-sm">返回博客</span>
               </Link>
               
               {/* Breadcrumb */}
               <div className="hidden md:flex items-center text-sm text-gray-500">
-                <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+                <Link href="/" className="hover:text-blue-600 transition-colors">首页</Link>
                 <span className="mx-2">/</span>
-                <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>
+                <Link href="/blog" className="hover:text-blue-600 transition-colors">博客</Link>
                 <span className="mx-2">/</span>
                 <span className="text-gray-900 font-medium truncate max-w-xs">{post.title}</span>
               </div>
@@ -239,14 +239,14 @@ export default function BlogPage({ params }: { params: { id: string } }) {
                         <svg className="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
-                        Copied!
+                        已复制!
                       </>
                     ) : (
                       <>
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                         </svg>
-                        Copy
+                        复制
                       </>
                     )}
                   </button>
@@ -289,14 +289,14 @@ export default function BlogPage({ params }: { params: { id: string } }) {
                         <svg className="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
-                        Copied!
+                        已复制!
                       </>
                     ) : (
                       <>
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                         </svg>
-                        Copy
+                        复制
                       </>
                     )}
                   </button>
@@ -343,7 +343,7 @@ export default function BlogPage({ params }: { params: { id: string } }) {
                 </div>
                 <div className="ml-3">
                   <p className="text-sm text-blue-700">
-                    <strong>Pro Tip:</strong> Always test your optimizations in a production-like environment to ensure they provide real benefits.
+                    <strong>专业提示：</strong> 始终在与生产环境类似的环境中测试优化，以确保它们带来实际益处。
                   </p>
                 </div>
               </div>
@@ -352,7 +352,7 @@ export default function BlogPage({ params }: { params: { id: string } }) {
 
           {/* Tags */}
           <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
-            <h3 className="text-sm font-semibold text-gray-900 dark:text-white mb-4">Tags:</h3>
+            <h3 className="text-sm font-semibold text-gray-900 dark:text-white mb-4">标签:</h3>
             <div className="flex flex-wrap gap-2">
               {post.tags.map((tag) => (
                 <span
@@ -375,7 +375,7 @@ export default function BlogPage({ params }: { params: { id: string } }) {
               </div>
               <div className="ml-4">
                 <p className="text-lg font-semibold text-gray-900 dark:text-white">{post.author.name}</p>
-                <p className="text-gray-600 dark:text-gray-400">Content Creator & Developer</p>
+                <p className="text-gray-600 dark:text-gray-400">内容创作者与开发者</p>
               </div>
             </div>
           </div>
@@ -387,7 +387,7 @@ export default function BlogPage({ params }: { params: { id: string } }) {
         <button
           onClick={scrollToTop}
           className="fixed bottom-8 right-8 p-3 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-110 z-50"
-          aria-label="Back to top"
+          aria-label="返回顶部"
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />

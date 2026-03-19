@@ -36,16 +36,16 @@ export default function HeroSection() {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight text-text-light dark:text-text-dark mb-6">
-              Hello, I am{' '}
+              你好，我是{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary dark:from-primary-dark dark:to-secondary-dark">
-                Developer
+                陈琦
               </span>
             </h1>
 
             <p className="text-lg lg:text-xl leading-relaxed text-text-light-secondary dark:text-text-dark-secondary mb-8 max-w-lg">
-              Transforming businesses through AI-powered content strategies. 
-              Specializing in creating <strong>100 practical AI use cases</strong> that 
-              make work and life more efficient for everyone.
+              通过AI驱动的内容策略推动业务增长。
+              专注于创建<strong>100个实用的AI应用案例</strong>，
+              让工作和生活更高效。
             </p>
 
             {/* Action buttons */}
@@ -54,7 +54,7 @@ export default function HeroSection() {
                 href="/portfolio"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-primary dark:bg-primary-dark text-white dark:text-bg-dark rounded-full font-semibold hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl dark:shadow-cyan-500/25 dark:hover:shadow-cyan-500/40 hover:scale-105"
               >
-                View My Work
+                查看我的作品
                 <ArrowRight size={20} />
               </Link>
               
@@ -63,7 +63,7 @@ export default function HeroSection() {
                 className="inline-flex items-center gap-2 px-8 py-4 bg-transparent border-2 border-primary dark:border-primary-dark text-primary dark:text-primary-dark rounded-full font-semibold hover:bg-primary hover:text-white dark:hover:bg-primary-dark dark:hover:text-bg-dark transition-all duration-300 hover:scale-105"
               >
                 <Download size={20} />
-                Download CV
+                下载简历
               </Link>
             </div>
           </div>

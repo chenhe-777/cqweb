@@ -20,11 +20,11 @@ export default function PortfolioClient() {
         <div className="container-custom">
           <div className="text-center max-w-4xl mx-auto mb-16">
             <h1 className="text-4xl lg:text-5xl font-heading font-bold text-[#111827] dark:text-text-dark mb-6">
-              My Portfolio
+              我的作品集
             </h1>
             <p className="text-lg text-[#4B5563] dark:text-text-dark-secondary leading-relaxed">
-              A showcase of AI-driven content marketing projects, innovative solutions, and successful case studies 
-              that demonstrate the power of artificial intelligence in modern marketing.
+              展示AI驱动的内容营销项目、创新解决方案和成功案例研究，
+              体现人工智能在现代营销中的强大力量。
             </p>
           </div>
 
@@ -77,7 +77,7 @@ export default function PortfolioClient() {
                      </div>
                      {item.featured && (
                        <div className="absolute top-3 right-3 bg-blue-500 text-white text-xs px-2 py-1 rounded-full font-medium">
-                         Featured
+ 精选
                        </div>
                      )}
                    </div>
@@ -129,7 +129,7 @@ export default function PortfolioClient() {
                        <div className="flex items-center gap-4 mb-4 text-xs text-gray-600 dark:text-gray-400">
                          {item.metrics.views && (
                            <span className="flex items-center gap-1">
-                             👁️ {item.metrics.views.toLocaleString()} views
+                             👁️ {item.metrics.views.toLocaleString()} 次浏览
                            </span>
                          )}
                          {item.metrics.roi && (
@@ -184,7 +184,7 @@ export default function PortfolioClient() {
                          href={`/portfolio/${item.slug}`}
                          className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 text-sm font-medium transition-colors hover:underline"
                        >
-                         View Details →
+                         查看详情 →
                        </a>
                      </div>
                    </div>
@@ -200,24 +200,24 @@ export default function PortfolioClient() {
          <div className="container-custom">
            <div className="text-center max-w-3xl mx-auto">
              <h2 className="text-3xl lg:text-4xl font-heading font-bold text-[#111827] dark:text-text-dark mb-6">
-               Ready to Start Your Next Project?
+               准备好开始下一个项目了吗？
              </h2>
              <p className="text-lg text-[#4B5563] dark:text-text-dark-secondary mb-8">
-               Let's collaborate on innovative AI-driven content strategies that deliver exceptional results.
+               让我们合作，制定创新的AI驱动内容策略，取得卓越成果。
              </p>
              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                <a
                  href="/contact"
                  className="inline-flex items-center gap-2 px-8 py-4 bg-[#3B82F6] hover:bg-blue-700 text-white rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
                >
-                 Start a Project
+                 开始项目
                  <span>→</span>
                </a>
                <a
                  href="/about"
                  className="inline-flex items-center gap-2 px-8 py-4 bg-transparent border-2 border-[#3B82F6] text-[#3B82F6] hover:bg-[#3B82F6] hover:text-white rounded-lg font-semibold transition-all duration-300"
                >
-                 Learn More About Me
+                 了解更多关于我
                  <span>↗</span>
                </a>
              </div>

@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: '关于我 - 陈琦',
@@ -219,20 +220,20 @@ export default function AboutPage() {
               让我们一起探讨 AI 内容如何真正帮助你的用户从"看懂"到"用起来"。
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
+              <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-[#1E3A8A] hover:bg-blue-800 text-white rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-[#1E3A8A] hover:bg-blue-800 text-white rounded-full font-semibold transition transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 联系我
                 <span>→</span>
-              </a>
-              <a
-                href="/portfolio"
+              </Link>
+              <Link
+                href="/blog"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-transparent border-2 border-[#1E3A8A] text-[#1E3A8A] hover:bg-[#1E3A8A] hover:text-white rounded-full font-semibold transition-all duration-300"
               >
                 查看作品
                 <span>↗</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

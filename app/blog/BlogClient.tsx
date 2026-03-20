@@ -322,13 +322,13 @@ export default function BlogClient() {
               还有更多内容正在路上，欢迎关注我的公众号「橘师傅的AI手记」获取最新更新。
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
+              <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-800 text-white rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 联系我
                 <span>→</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

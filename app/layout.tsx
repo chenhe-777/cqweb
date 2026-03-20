@@ -11,23 +11,23 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: '陈琦 - 内容运营专家',
-  description: '8年内容运营经验，专注内容营销增长、用户运营、账号孵化',
-  keywords: ['内容运营', '内容营销', '账号孵化', '小红书', '知乎', '直播运营'],
+  title: '陈琦 - AI 用户理解与内容策略',
+  description: '10年内容经验，3年AI创业实战，探索AI在真实场景中的内容表达与用户理解。',
+  keywords: ['AI用户理解', '内容策略', 'AI内容创作', '内容运营', 'AI创业', '内容转化'],
   authors: [{ name: '陈琦' }],
   creator: '陈琦',
   openGraph: {
     type: 'website',
     locale: 'zh_CN',
     url: 'https://chenhe-777.github.io/cqweb',
-    title: '陈琦 - 内容运营专家',
-    description: '内容营销增长、用户运营、账号孵化实战经验分享',
+    title: '陈琦 - AI 用户理解与内容策略',
+    description: '10年内容经验，3年AI创业实战，探索AI在真实场景中的内容表达与用户理解。',
     siteName: '陈琦的个人网站',
   },
   twitter: {
     card: 'summary_large_image',
-    title: '陈琦 - 内容运营专家',
-    description: '内容营销增长、用户运营、账号孵化实战经验分享',
+    title: '陈琦 - AI 用户理解与内容策略',
+    description: '10年内容经验，3年AI创业实战，探索AI在真实场景中的内容表达与用户理解。',
   },
   robots: {
     index: true,

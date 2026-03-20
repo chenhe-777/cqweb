@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: '关于我 - 陈琦',
-  description: '内容运营专家，专注于内容营销增长、用户运营、账号孵化',
+  description: 'AI 用户理解与内容策略专家，10年内容经验，3年AI创业实战，探索AI在真实场景中的内容表达与用户理解。',
 }
 
 export default function AboutPage() {
@@ -18,17 +18,22 @@ export default function AboutPage() {
                 你好，我是陈琦
               </h1>
               <h2 className="text-xl lg:text-2xl text-[#4B5563] dark:text-text-dark-secondary mb-8 font-medium">
-                内容运营专家 · 8年实战经验
+                AI 用户理解与内容策略 · 10年内容经验 · 3年 AI 创业实战
               </h2>
               <div className="space-y-6 text-[#111827] dark:text-text-dark text-lg leading-relaxed">
                 <p>
-                  我是一名专注于<strong>内容营销增长</strong>的运营专家，拥有8年一线实战经验。我擅长通过内容策略帮助企业实现用户增长和品牌影响力的提升。
+                  我专注于 AI 在真实场景中的内容表达与用户理解。
+                  过去 10 年，我一直在做一件事：把复杂的东西讲给普通人听。
                 </p>
                 <p>
-                  我的核心理念是<strong>"内容驱动增长"</strong>。通过深入理解用户需求，结合数据分析和创意策略，打造出能够真正打动用户的内容。我曾在多家公司担任内容运营相关职位，积累了从个人账号孵化到企业内容体系搭建的完整经验。
+                  2023 年加入 AI 创业公司后，我发现了一个反复出现的问题：
+                  技术团队能做出很好的产品，但普通用户看不懂、不会用、不相信它有用。
+                  这不是技术问题，而是理解与表达的问题——而这恰好是我最擅长的事。
                 </p>
                 <p>
-                  我对小红书、知乎、公众号等主流平台有深入研究，曾成功孵化多个<strong>万粉账号</strong>，并帮助企业建立完善的内容生产SOP体系。我相信优质的内容是连接品牌与用户的最佳桥梁。
+                  10 年内容运营经验，让我积累了一种核心能力：
+                  理解用户在哪里卡住，然后用内容帮他们跨过去。
+                  现在，我将这种能力用于 AI 场景，持续探索 AI 工具在职场与日常中的真实用法。
                 </p>
               </div>
             </div>
@@ -69,12 +74,12 @@ export default function AboutPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
               {[
-                { skill: '内容策略', level: 95, icon: '📝' },
-                { skill: '账号孵化', level: 92, icon: '📱' },
-                { skill: '小红书运营', level: 90, icon: '🌸' },
-                { skill: '知乎运营', level: 88, icon: '💡' },
-                { skill: '直播SOP', level: 85, icon: '🎙️' },
-                { skill: '数据分析', level: 87, icon: '📊' },
+                { skill: 'AI 内容策划', level: 95, icon: '📝' },
+                { skill: 'AI 应用内容表达', level: 92, icon: '📱' },
+                { skill: '多平台内容运营', level: 90, icon: '🌸' },
+                { skill: '用户理解与内容转化', level: 88, icon: '💡' },
+                { skill: '内容 SOP 体系搭建', level: 85, icon: '🎙️' },
+                { skill: 'AI 工具实战应用', level: 87, icon: '📊' },
               ].map((item, index) => (
                 <div key={index} className="bg-white dark:bg-bg-dark p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <div className="flex items-center mb-4">
@@ -105,9 +110,11 @@ export default function AboutPage() {
                 <div className="space-y-6">
                   <div className="border-l-4 border-blue-500 pl-6">
                     <h4 className="font-semibold text-[#111827] dark:text-text-dark mb-2">浙江深佳科技 · 企划部总监</h4>
-                    <p className="text-[#4B5563] dark:text-text-dark-secondary mb-1">2023.03 - 至今</p>
+                    <p className="text-[#4B5563] dark:text-text-dark-secondary mb-1">2023.04 - 2026.03</p>
                     <p className="text-[#111827] dark:text-text-dark">
-                      负责公司内容营销战略制定与执行，统筹小红书、知乎、公众号等多平台运营工作。
+                      深度参与 AI 创业公司转型，聚焦大模型与 Agent 在职场/政企场景的落地应用。
+                      负责 AI 产品的对外表达与商业叙事，将复杂的 AI 产品逻辑转化为普通人可理解的内容。
+                      主导路演 PPT、产品介绍、解决方案文档等关键材料，同时建立 AI 辅助内容生产 SOP。
                     </p>
                   </div>
                   <div className="border-l-4 border-blue-400 pl-6">
@@ -125,10 +132,11 @@ export default function AboutPage() {
                     </p>
                   </div>
                   <div className="border-l-4 border-blue-200 pl-6">
-                    <h4 className="font-semibold text-[#111827] dark:text-text-dark mb-2">九零门 · 运营经理</h4>
-                    <p className="text-[#4B5563] dark:text-text-dark-secondary mb-1">2017.06 - 2019.09</p>
+                    <h4 className="font-semibold text-[#111827] dark:text-text-dark mb-2">吴晓波频道·九零门 · 新媒体主编</h4>
+                    <p className="text-[#4B5563] dark:text-text-dark-secondary mb-1">2021.10 - 2022.02</p>
                     <p className="text-[#111827] dark:text-text-dark">
-                      负责课程产品运营与内容营销，实现变现GMV破百万。
+                      统筹图文、短视频、直播多元内容矩阵，打通"内容引流—私域沉淀—服务转化"全链路。
+                      通过数据复盘与流程优化，直播场均引流客户翻倍。
                     </p>
                   </div>
                   <div className="border-l-4 border-blue-100 pl-6">
@@ -149,31 +157,31 @@ export default function AboutPage() {
                   <div className="flex items-start">
                     <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 mr-4 flex-shrink-0"></div>
                     <p className="text-[#111827] dark:text-text-dark">
-                      <strong>成功孵化</strong>多个万粉账号（知乎、小红书）
+                      ✅ 3年 AI 创业公司实战，深度参与大模型产品的内容表达与商业化落地
                     </p>
                   </div>
                   <div className="flex items-start">
                     <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 mr-4 flex-shrink-0"></div>
                     <p className="text-[#111827] dark:text-text-dark">
-                      <strong>打造多篇</strong>爆款内容，单篇笔记点赞破万
+                      ✅ 10年内容运营经验，覆盖新媒体矩阵、商业转化、直播 SOP 完整链路
                     </p>
                   </div>
                   <div className="flex items-start">
                     <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 mr-4 flex-shrink-0"></div>
                     <p className="text-[#111827] dark:text-text-dark">
-                      <strong>搭建完整</strong>内容SOP体系，提升团队效率300%
+                      ✅ 建立 AI 辅助内容生产 SOP，大幅提升多渠道营销物料产出效能
                     </p>
                   </div>
                   <div className="flex items-start">
                     <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 mr-4 flex-shrink-0"></div>
                     <p className="text-[#111827] dark:text-text-dark">
-                      <strong>8年</strong>内容运营一线实战经验
+                      ✅ 个人 AI 应用类内容创作持续输出，聚焦普通用户的 AI 使用路径
                     </p>
                   </div>
                   <div className="flex items-start">
                     <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 mr-4 flex-shrink-0"></div>
                     <p className="text-[#111827] dark:text-text-dark">
-                      <strong>接受过</strong>多家媒体报道（初橙资本专访、九零门案例）
+                      ✅ 浙江大学应用生物本科，CET6，熟练运用主流 AI 大模型与工具
                     </p>
                   </div>
                 </div>
@@ -185,7 +193,8 @@ export default function AboutPage() {
                   <div className="flex items-start">
                     <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 mr-4 flex-shrink-0"></div>
                     <p className="text-[#111827] dark:text-text-dark">
-                      <strong>宁波财经学院</strong> · 市场营销专业
+                      <strong>浙江大学</strong> · 应用生物专业（本科）<br/>
+                      2012.08 - 2016.07 · 大三学年优秀学业奖学金
                     </p>
                   </div>
                 </div>
@@ -203,8 +212,8 @@ export default function AboutPage() {
               期待与你的合作
             </h2>
             <p className="text-lg text-[#4B5563] dark:text-text-dark-secondary mb-8 leading-relaxed">
-              如果你有内容营销、账号孵化或直播运营的需求，欢迎联系我。
-              让我们一起探讨如何通过内容策略实现你的业务增长。
+              如果你在寻找能理解用户、能把 AI 讲清楚的内容策略伙伴，欢迎联系我。
+              让我们一起探讨 AI 内容如何真正帮助你的用户从"看懂"到"用起来"。
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

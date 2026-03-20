@@ -51,7 +51,7 @@ export default function HeroSection() {
             {/* Action buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="/portfolio"
+                href="/blog"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-primary dark:bg-primary-dark text-white dark:text-bg-dark rounded-full font-semibold hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl dark:shadow-cyan-500/25 dark:hover:shadow-cyan-500/40 hover:scale-105"
               >
                 查看我的作品

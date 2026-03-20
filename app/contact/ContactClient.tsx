@@ -163,7 +163,7 @@ export default function ContactClient() {
                   {showQrCode && (
                     <div className="col-span-2 bg-white dark:bg-bg-dark p-6 rounded-lg shadow-lg flex flex-col items-center justify-center">
                       <img
-                        src="/wechat-qr.png"
+                        src="https://chenhe-777.github.io/cqweb/wechat-qr.png"
                         alt="微信二维码"
                         width="192"
                         height="192"

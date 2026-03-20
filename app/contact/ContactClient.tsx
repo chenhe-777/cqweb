@@ -161,13 +161,13 @@ export default function ContactClient() {
                     <span className="text-sm text-[#4B5563] dark:text-text-dark-secondary">点击查看二维码</span>
                   </div>
                   {showQrCode && (
-                    <div className="col-span-2 bg-white dark:bg-bg-dark p-6x rounded-lg shadow-lg flex flex-col items-center justify-center">
-                      <Image
-                        src="/images/wechat-qr.png"
+                    <div className="col-span-2 bg-white dark:bg-bg-dark p-6 rounded-lg shadow-lg flex flex-col items-center justify-center">
+                      <img
+                        src="/wechat-qr.png"
                         alt="微信二维码"
-                        width={192}
-                        height={192}
-                        className="mb-3"
+                        width="192"
+                        height="192"
+                        className="w-48 h-48 object-contain mb-3"
                       />
                       <span className="text-sm text-[#4B5563] dark:text-text-dark-secondary">扫码添加我的微信</span>
                     </div>

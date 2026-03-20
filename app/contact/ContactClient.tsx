@@ -150,14 +150,13 @@ export default function ContactClient() {
                 </h2>
                 <div className="grid grid-cols-2 gap-4">
                   {/* WeChat */}
-                  <a
-                    href="#"
+                  <div
                     className="bg-white dark:bg-bg-dark p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center text-center"
                   >
                     <span className="text-4xl mb-3">💬</span>
                     <span className="font-medium text-[#111827] dark:text-text-dark">微信</span>
                     <span className="text-sm text-[#4B5563] dark:text-text-dark-secondary">扫码添加</span>
-                  </a>
+                  </div>
 
                   {/* Public Account */}
                   <a
@@ -171,136 +170,29 @@ export default function ContactClient() {
                   </a>
 
                   {/* Xiaohongshu */}
-                  <a
-                    href="#"
-                    target="_blank"
+                  <div
                     className="bg-white dark:bg-bg-dark p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center text-center"
                   >
                     <span className="text-4xl mb-3">📕</span>
                     <span className="font-medium text-[#111827] dark:text-text-dark">小红书</span>
-                    <span className="text-sm text-[#4B5563] dark:text-text-dark-secondary">@你的ID</span>
-                  </a>
+                    <span className="text-sm text-[#4B5563] dark:text-text-dark-secondary">@悬疑控陈河</span>
+                  </div>
 
                   {/* Zhihu */}
-                  <a
-                    href="#"
-                    target="_blank"
+                  <div
                     className="bg-white dark:bg-bg-dark p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center text-center"
                   >
                     <span className="text-4xl mb-3">🎓</span>
                     <span className="font-medium text-[#111827] dark:text-text-dark">知乎</span>
-                    <span className="text-sm text-[#4B5563] dark:text-text-dark-secondary">@你的ID</span>
-                  </a>
+                    <span className="text-sm text-[#4B5563] dark:text-text-dark-secondary">@陈河</span>
+                  </div>
                 </div>
 
-                {/* Message Form */}
-                <div className="mt-8">
-                  <h2 className="text-2xl font-heading font-bold text-[#1E3A8A] dark:text-text-dark mb-6">
-                    留言留言
-                  </h2>
-
-                  {submitStatusSubject === 'success' && (
-                    <div className="mb-6 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg">
-                      <p className="text-green-700 dark:text-green-400 font-medium">
-                        ✅ 留言已发送！我会在24小时内回复。
-                      </p>
-                    </div>
-                  )}
-
-                  {submitStatusSubject === 'error' && (
-                    <div className="mb-6 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">
-                      <p className="text-red-700 dark:text-red-400 font-medium">
-                        ❌ 留言发送失败，请重试。
-                      </p>
-                    </div>
-                  )}
-
-                  <form onSubmit={handleSubmit} className="space-y-4">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-[#111827] dark:text-text-dark mb-2">
-                        姓名
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        placeholder="你的姓名"
-                        className="w-full px-4 py-3 bg-white dark:bg-bg-dark border border-[#E5E7EB] dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-[#1E3A8A] dark:focus:ring-primary-dark focus:border-transparent text-[#111827] dark:text-text-dark transition-all duration-300"
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-[#111827] dark:text-text-dark mb-2">
-                        邮箱
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        placeholder="你的邮箱"
-                        className="w-full px-4 py-3 bg-white dark:bg-bg-dark border border-[#E5E7EB] dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-[#1E3A8A] dark:focus:ring-primary-dark focus:border-transparent text-[#111827] dark:text-text-dark transition-all duration-300"
-                      />
-                    </div>
-
-                    <div>
-                      <label htmlFor="subject" className="block text-sm font-medium text-[#111827] dark:text-text-dark mb-2">
-                        主题
-                      </label>
-                      <select
-                        id="subject"
-                        name="subject"
-                        value={formData.subject}
-                        onChange={handleInputChange}
-                        className="w-full px-4 py-3 bg-white dark:bg-bg-dark border border-[#E5E7EB] dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-[#1E3A8A] dark:focus:ring-primary-dark focus:border-transparent text-[#111827] dark:text-text-dark transition-all duration-300"
-                      >
-                        <option value="">选择主题</option>
-                        <option value="AI内容合作">AI 内容合作</option>
-                        <option value="博客/内容交流">博客/内容交流</option>
-                        <option value="其他">其他</option>
-                      </select>
-                    </div>
-
-                    <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-[#111827] dark:text-text-dark mb-2">
-                        留言内容
-                      </label>
-                      <textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleInputChange}
-                        placeholder="你想说的..."
-                        rows={4}
-                        className="w-full px-4 py-3 bg-white dark:bg-bg-dark border border-[#E5E7EB] dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-[#1E3A8A] dark:focus:ring-primary-dark focus:border-transparent text-[#111827] dark:text-text-dark transition-all duration-300 resize-none"
-                      />
-                    </div>
-
-                    <button
-                      type="submit"
-                      disabled={isSubmittingSubject}
-                      className="w-full px-8 py-4 bg-[#1E3A8A] hover:bg-blue-800 disabled:bg-gray-400 disabled:cursor-not-allowed text-white rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
-                    >
-                      {isSubmittingSubject ? (
-                        <span className="flex items-center justify-center gap-2">
-                          <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                          发送中...
-                        </span>
-                      ) : (
-                        '发送留言'
-                      )}
-                    </button>
-                  </form>
-
-                  {/* Direct Contact Note */}
-                  <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                    <p className="text-blue-800 dark:text-blue-200 text-center">
-                      最直接的方式是发邮件或打电话，我会在24小时内回复。
-                    </p>
-                  </div>
+                {/* Direct Contact Note */}
+                <div className="mt-8 p-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                  <p className="text-blue-800 dark:text-blue-200 text-center">
+                    最直接的方式是发邮件或打电话，我会在24小时内回复。
+                  </p>
                 </div>
               </div>
             </div>

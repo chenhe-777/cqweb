@@ -82,7 +82,7 @@ export default function HomePage() {
                 多平台内容运营
               </h3>
               <p className="text-text-light-secondary dark:text-text-dark-secondary">
-                具备公众号、知乎、小红书等多平台内容运营经验，根据平台特性调整 AI 内容的表达方式与重点，通过数据反馈持续优化内容效果。
+                具备公众号、公众号、小红书等多平台内容运营经验，根据平台特性调整 AI 内容的表达方式与重点，通过数据反馈持续优化内容效果。
               </p>
             </div>
             
@@ -109,28 +109,28 @@ export default function HomePage() {
               精选项目
             </h2>
             <p className="text-lg text-text-light-secondary dark:text-text-dark-secondary max-w-2xl mx-auto">
-              展示部分内容营销与用户增长实战案例
+              展示 AI 内容创作、内容策略与 AI 创业实战案例
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-bg-light-secondary dark:bg-bg-dark-secondary rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
               <div className="relative h-48 bg-gradient-to-br from-primary/20 to-secondary/20 dark:from-primary-dark/20 dark:to-secondary-dark/20 flex items-center justify-center">
-                <div className="text-primary dark:text-primary-dark text-4xl">🚀</div>
+                <div className="text-primary dark:text-primary-dark text-4xl">📝</div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-text-light dark:text-text-dark mb-3 group-hover:text-primary dark:group-hover:text-primary-dark transition-colors">
-                  知乎万粉账号增长
+                  AI 应用类内容创作（公众号）
                 </h3>
                 <p className="text-text-light-secondary dark:text-text-dark-secondary mb-4">
-                  从0到万粉的知乎账号运营，建立个人IP，提升行业影响力
+                  面向普通用户与职场人士的 AI 应用内容，包括 AI 工具使用教程、AI 应用场景拆解、AI 效率方案。目标：让读者从"看懂"AI 工具到"能用上"。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 bg-primary/10 dark:bg-primary-dark/10 text-primary dark:text-primary-dark text-sm rounded-full">
-                    知乎
+                    公众号
                   </span>
                   <span className="px-3 py-1 bg-primary/10 dark:bg-primary-dark/10 text-primary dark:text-primary-dark text-sm rounded-full">
-                    冷启动
+                    AI教程
                   </span>
                 </div>
               </div>
@@ -138,21 +138,21 @@ export default function HomePage() {
 
             <div className="bg-bg-light-secondary dark:bg-bg-dark-secondary rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
               <div className="relative h-48 bg-gradient-to-br from-primary/20 to-secondary/20 dark:from-primary-dark/20 dark:to-secondary-dark/20 flex items-center justify-center">
-                <div className="text-primary dark:text-primary-dark text-4xl">📱</div>
+                <div className="text-primary dark:text-primary-dark text-4xl">💼</div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-text-light dark:text-text-dark mb-3 group-hover:text-primary dark:group-hover:text-primary-dark transition-colors">
-                  小红书爆文打造
+                  内容策略与转化实践（吴晓波频道·九零门）
                 </h3>
                 <p className="text-text-light-secondary dark:text-text-dark-secondary mb-4">
-                  打造多篇爆款笔记，单篇笔记点赞破万，带动账号快速增长
+                  面向高客单价商业转化的内容策划与执行，通过数据拆解与持续优化，建立内容驱动用户决策的完整链路。单篇推文最多引导客户转化 30+，验证了内容策略的实际商业价值。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 bg-primary/10 dark:bg-primary-dark/10 text-primary dark:text-primary-dark text-sm rounded-full">
                     小红书
                   </span>
                   <span className="px-3 py-1 bg-primary/10 dark:bg-primary-dark/10 text-primary dark:text:text-dark text-sm rounded-full">
-                    爆文策略
+                    商业转化
                   </span>
                 </div>
               </div>
@@ -164,17 +164,17 @@ export default function HomePage() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-text-light dark:text-text-dark mb-3 group-hover:text-primary dark:group-hover:text-primary-dark transition-colors">
-                  直播SOP体系搭建
+                  AI 创业实战：产品理解与用户教育
                 </h3>
                 <p className="text-text-light-secondary dark:text-text-dark-secondary mb-4">
-                  从0到1搭建直播运营SOP，规范流程，提升转化效率
+                  在 AI 创业公司 3 年的实践中，积累了对"非技术用户如何学会 AI"的深度理解。负责过产品对外表达、内容营销、用户教育等关键环节。这段经历让我看到：AI 不是技术问题，而是理解与表达问题。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 bg-primary/10 dark:bg-primary-dark/10 text-primary dark:text-primary-dark text-sm rounded-full">
-                    直播策划
+                    AI创业
                   </span>
                   <span className="px-3 py-1 bg-primary/10 dark:bg-primary-dark/10 text-primary dark:text-primary-dark text-sm rounded-full">
-                    SOP固化
+                    用户教育
                   </span>
                 </div>
               </div>

@@ -129,7 +129,6 @@ export default function BlogClient() {
                       <div className="flex items-center gap-4 mb-4">
                         <LoadingSkeleton className="w-20 h-6" />
                         <LoadingSkeleton className="w-24 h-4" />
- />
                       </div>
                       <LoadingSkeleton className="w-full h-8 mb-3" />
                       <LoadingSkeleton className="w-full h-4 mb-2" />

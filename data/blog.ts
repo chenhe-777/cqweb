@@ -11,10 +11,11 @@ export interface BlogPost {
   featured: boolean
   thumbnail: string
   tags: string[]
+  link: string
   author: {
     name: string
     avatar: string
-{
+  }
 }
 
 export const blogCategories = [

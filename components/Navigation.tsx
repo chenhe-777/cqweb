@@ -10,7 +10,6 @@ import ThemeToggle from './ThemeToggle'
 const navItems = [
   { name: '首页', href: '/' },
   { name: '关于', href: '/about' },
-  { name: '作品集', href: '/portfolio' },
   { name: '博客', href: '/blog' },
   { name: '联系', href: '/contact' },
 ]
@@ -96,7 +95,7 @@ export default function Navigation() {
               className="p-2 rounded-md text-text-light dark:text-text-dark hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              aria-label="Toggle mobile menu"
+              aria-label="切换移动菜单"
             >
               <AnimatePresence mode="wait">
                 {isOpen ? (

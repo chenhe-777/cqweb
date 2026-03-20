@@ -14,32 +14,33 @@ export interface BlogPost {
   author: {
     name: string
     avatar: string
-  }
+{
 }
 
 export const blogCategories = [
   '全部文章',
-  '内容营销',
-  'AI与机器学习',
-  '数字策略',
-  '案例研究',
-  '运营技巧',
+  'AI做图',
+  'AI学习工具',
+  'AI工具对比',
+  'AI工具实战',
+  '效率工具',
 ]
 
 export const blogPosts: BlogPost[] = [
   {
     id: '1',
-    slug: 'content-sop-framework',
-    title: '内容 SOP 框架搭建指南',
-    description: '从 0 到 1 搭建可复用的内容 SOP 体系，包括选题流程、撰写规范、审核机制和分发策略，提升团队内容生产效率。',
-    category: '内容营销',
-    publishDate: '2024-02-15',
-    readTime: 8,
-    views: 1234,
+    slug: 'ai-image-prompts-october-2025',
+    title: '10组AI做图提示词，把国庆朋友圈秒变艺术品',
+    description: '旅行攻略、城市地标、人山人海，3类场景10种风格全实测',
+    category: 'AI做图',
+    publishDate: '2025-10',
+    readTime: 6,
+    views: 2500,
     comments: 15,
     featured: true,
-    thumbnail: '📝',
-    tags: ['内容SOP', '流程规范', '团队协作'],
+    thumbnail: '🎨',
+    tags: ['AI做图', '提示词'],
+    link: 'https://mp.weixin.qq.com/s/Jfm1OKeGNlavodmz9JvGaw',
     author: {
       name: '陈琦',
       avatar: '/images/author-avatar.jpg'
@@ -47,17 +48,18 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: '2',
-    slug: 'ai-content-automation',
-    title: 'AI 赋能内容生产实践',
-    description: '分享使用 ChatGPT、Claude 等 AI 工具辅助内容创作的实战经验，从选题策划到文案生成，提升内容产出效率。',
-    category: 'AI与机器学习',
-    publishDate: '2024-02-12',
-    readTime: 10,
-    views: 987,
-    comments: 23,
+    slug: 'jimeng-chinese-poster',
+    title: '9组提示词在即梦做中文海报',
+    description: 'Nano banana还在画火星文？即梦4.0的中文海报实测与提示词分享',
+    category: 'AI做图',
+    publishDate: '2025-09',
+    readTime: 5,
+    views: 2100,
+    comments: 12,
     featured: true,
-    thumbnail: '🤖',
-    tags: ['AI工具', '内容生产', '效率提升'],
+    thumbnail: '🖼',
+    tags: ['AI做图', '提示词'],
+    link: 'https://mp.weixin.qq.com/s/hzWicRpPzpST38bsrlNfzQ',
     author: {
       name: '陈琦',
       avatar: '/images/author-avatar.jpg'
@@ -65,17 +67,18 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: '3',
-    slug: 'xiaohongshu-explosive-content',
-    title: '小红书爆文写作方法论',
-    description: '拆解小红书爆款内容共性，从标题优化、封面设计到话题选择，总结可复用的爆文创作技巧。',
-    category: '内容营销',
-    publishDate: '2024-02-05',
-    readTime: 12,
-    views: 756,
+    slug: 'notebooklm-book-to-podcast',
+    title: '用NotebookLM把难啃的书榨成30分钟播客',
+    description: '用福格行为模型重新理解学习这件事，降低门槛才是关键',
+    category: 'AI学习工具',
+    publishDate: '2025-06',
+    readTime: 8,
+    views: 1800,
     comments: 8,
-    featured: false,
-    thumbnail: '🌸',
-    tags: ['小红书', '爆文策略', '内容增长'],
+    featured: true,
+    thumbnail: '📝',
+    tags: ['AI学习工具', '效率方法'],
+    link: 'https://mp.weixin.qq.com/s/wsPUGkz--z9XxecorfT7ZA',
     author: {
       name: '陈琦',
       avatar: '/images/author-avatar.jpg'
@@ -83,17 +86,18 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: '4',
-    slug: 'live-stream-sop',
-    title: '直播 SOP 固化与执行',
-    description: '分享直播会销的完整 SOP 模板，包括前中后三阶段的关键节点把控，提升直播转化效果。',
-    category: '案例研究',
-    publishDate: '2024-01-28',
-    readTime: 9,
-    views: 543,
-    comments: 12,
+    slug: 'ai-tools-ppt-comparison',
+    title: '老板逼我1小时交PPT！4款AI工具实测',
+    description: 'Skywork、Coze空间、Flowith、Manus横评，谁做PPT最能打？',
+    category: 'AI工具对比',
+    publishDate: '2025-05',
+    readTime: 10,
+    views: 1600,
+    comments: 18,
     featured: false,
-    thumbnail: '🎙️',
-    tags: ['直播策划', 'SOP', '转化优化'],
+    thumbnail: '📊',
+    tags: ['AI工具对比', '效率工具'],
+    link: 'https://mp.weixin.qq.com/s/XBMLtOUsGAfRJ-cOYvQQs2Q',
     author: {
       name: '陈琦',
       avatar: '/images/author-avatar.jpg'
@@ -101,71 +105,18 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: '5',
-    slug: 'zhihu-growth-strategy',
-    title: '知乎账号冷启动实战',
-    description: '记录知乎个人账号从 0 到万粉的运营过程，包括选题策略、内容规划和数据复盘方法。',
-    category: '内容营销',
-    publishDate: '2024-01-22',
-    readTime: 11,
-    views: 892,
-    comments: 19,
-    featured: true,
-    thumbnail: '📈',
-    tags: ['知乎', '冷启动', '增长策略'],
-    author: {
-      name: '陈琦',
-      avatar: '/images/author-avatar.jpg'
-    }
-  },
-  {
-    id: '6',
-    slug: 'competitor-analysis',
-    title: '竞品调研与内容定位',
-    description: '如何通过系统化的竞品分析找到差异化内容方向，避免同质化竞争，建立内容护城河。',
-    category: '数字策略',
-    publishDate: '2024-01-18',
-    readTime: 8,
-    views: 1087,
-    comments: 27,
+    slug: 'gemini-webpage-redesign',
+    title: '用Gemini 2.5 Pro 1小时翻新网页端产品',
+    description: '录屏丢给AI，1小时生成15个可交互页面，省掉5万外包费用的实战记录',
+    category: 'AI工具实战',
+    publishDate: '2025-05',
+    readTime: 12,
+    views: 1500,
+    comments: 10,
     featured: false,
-    thumbnail: '🔍',
-    tags: ['竞品分析', '内容定位', '策略'],
-    author: {
-      name: '陈琦',
-      avatar: '/images/author-avatar.jpg'
-    }
-  },
-  {
-    id: '7',
-    slug: 'content-roi-measurement',
-    title: '内容营销 ROI 量化评估',
-    description: '介绍内容营销效果的评估方法，包括核心指标选择、归因模型和数据复盘思路。',
-    category: '数字策略',
-    publishDate: '2024-01-12',
-    readTime: 7,
-    views: 634,
-    comments: 9,
-    featured: false,
-    thumbnail: '📊',
-    tags: ['ROI', '数据分析', '效果评估'],
-    author: {
-      name: '陈琦',
-      avatar: '/images/author-avatar.jpg'
-    }
-  },
-  {
-    id: '8',
-    slug: 'multimedia-content-distribution',
-    title: '多媒体内容分发策略',
-    description: '同一篇内容如何适配公众号、知乎、小红书等不同平台，实现一鱼多吃。',
-    category: '运营技巧',
-    publishDate: '2024-01-08',
-    readTime: 6,
-    views: 721,
-    comments: 16,
-    featured: true,
-    thumbnail: '📱',
-    tags: ['多平台', '内容分发', '效率'],
+    thumbnail: '🚀',
+    tags: ['AI工具实战', '前端生成'],
+    link: 'https://mp.weixin.qq.com/s/abKklWwBzmm-fj3_dEBmOw',
     author: {
       name: '陈琦',
       avatar: '/images/author-avatar.jpg'

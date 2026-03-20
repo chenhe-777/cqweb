@@ -181,10 +181,10 @@ export default function HomePage() {
 
           <div className="text-center mt-12">
             <a
-              href="/portfolio"
+              href="/blog"
               className="inline-flex items-center gap-2 px-8 py-4 bg-primary dark:bg-primary-dark text-white dark:text-bg-dark rounded-full font-semibold hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              查看更多项目
+              查看更多内容
               <span>→</span>
             </a>
           </div>

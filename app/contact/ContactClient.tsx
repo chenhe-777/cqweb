@@ -13,6 +13,7 @@ export default function ContactClient() {
 
   const [isSubmittingSubject, setIsSubmittingSubject] = useState(false)
   const [submitStatusSubject, setSubmitStatusSubject] = useState<'idle' | 'success' | 'error'>('idle')
+  const [showQrCode, setShowQrCode] = useState(false)
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value, type } = e.target
@@ -151,12 +152,23 @@ export default function ContactClient() {
                 <div className="grid grid-cols-2 gap-4">
                   {/* WeChat */}
                   <div
-                    className="bg-white dark:bg-bg-dark p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center text-center"
+                    className="bg-white dark:bg-bg-dark p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col items-center justify-center text-center cursor-pointer"
+                    onClick={() => setShowQrCode(!showQrCode)}
                   >
                     <span className="text-4xl mb-3">💬</span>
                     <span className="font-medium text-[#111827] dark:text-text-dark">微信</span>
-                    <span className="text-sm text-[#4B5563] dark:text-text-dark-secondary">扫码添加</span>
+                    <span className="text-sm text-[#4B5563] dark:text-text-dark-secondary">点击查看二维码</span>
                   </div>
+                  {showQrCode && (
+                    <div className="col-span-2 bg-white dark:bg-bg-dark p-6 rounded-lg shadow-lg flex flex-col items-center justify-center">
+                      <img
+                        src="/images/wechat-qr.png"
+                        alt="微信二维码"
+                        className="w-48 h-48 object-contain mb-3"
+                      />
+                      <span className="text-sm text-[#4B5563] dark:text-text-dark-secondary">扫码添加我的微信</span>
+                    </div>
+                  )}
 
                   {/* Public Account */}
                   <a

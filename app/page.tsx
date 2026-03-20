@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-bg-light dark:bg-bg-dark pt-20">
@@ -16,21 +18,21 @@ export default function HomePage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a
+            <Link
               href="/blog"
               className="inline-flex items-center gap-2 px-8 py-4 bg-primary dark:bg-primary-dark text-white dark:text-bg-dark rounded-full font-semibold hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               查看我的内容与作品
               <span>→</span>
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="/contact"
               className="inline-flex items-center gap-2 px-8 py-4 bg-transparent border-2 border-primary dark:border-primary-dark text-primary dark:text-primary-dark rounded-full font-semibold hover:bg-primary hover:text-white dark:hover:bg-primary-dark dark:hover:text-bg-dark transition-all duration-300"
             >
               <span>↓</span>
               联系我
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -180,13 +182,13 @@ export default function HomePage() {
           </div>
 
           <div className="text-center mt-12">
-            <a
+            <Link
               href="/about"
               className="inline-flex items-center gap-2 px-8 py-4 bg-primary dark:bg-primary-dark text-white dark:text-bg-dark rounded-full font-semibold hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               查看更多内容
               <span>→</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

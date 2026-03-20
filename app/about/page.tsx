@@ -111,7 +111,7 @@ export default function AboutPage() {
                 <div className="space-y-6">
                   <div className="border-l-4 border-blue-500 pl-6">
                     <h4 className="font-semibold text-[#111827] dark:text-text-dark mb-2">浙江深佳科技 · 企划部总监</h4>
-                    <p className="text-[#4B5563] dark:text-text-dark-secondary mb-1">2023.04 - 2026.03</p>
+                    <p className="text-[#4B5563] dark:text-text-dark-secondary mb-1">2023 - 2026</p>
                     <p className="text-[#111827] dark:text-text-dark">
                       深度参与 AI 创业公司转型，聚焦大模型与 Agent 在职场/政企场景的落地应用。
                       主导 AI 产品的对外表达与商业叙事（路演 PPT、产品介绍等），将 AI 产品逻辑转化为普通人可理解的内容。
@@ -120,23 +120,15 @@ export default function AboutPage() {
                   </div>
                   <div className="border-l-4 border-blue-400 pl-6">
                     <h4 className="font-semibold text-[#111827] dark:text-text-dark mb-2">吴晓波频道·九零门 · 新媒体主编</h4>
-                    <p className="text-[#4B5563] dark:text-text-dark-secondary mb-1">2021.10 - 2022.02</p>
+                    <p className="text-[#4B5563] dark:text-text-dark-secondary mb-1">2021 - 2022</p>
                     <p className="text-[#111827] dark:text-text-dark">
                       业务方向为赋能90后创业者，统筹图文、短视频、直播多元内容矩阵，打通"内容引流—私域沉淀—服务转化"全链路。
                       通过数据复盘与流程优化，直播场均引流客户翻倍。
                     </p>
                   </div>
-                  <div className="border-l-4 border-blue-300 pl-6">
-                    <h4 className="font-semibold text-[#111827] dark:text-text-dark mb-2">杭州友笑科技 · 新媒体运营</h4>
-                    <p className="text-[#4B5563] dark:text-text-dark-secondary mb-1">2021.02 - 2021.10</p>
-                    <p className="text-[#111827] dark:text-text-dark">
-                      业务方向为校友会服务商，负责公司整体内容运营与销售支撑。
-                      搭建对外传播公众号平台，配合企业微信与社群转化客户，策划直播会销方案并固化直播 SOP 模板。
-                    </p>
-                  </div>
                   <div className="border-l-4 border-blue-200 pl-6">
                     <h4 className="font-semibold text-[#111827] dark:text-text-dark mb-2">杭州光华赋能 · 内容运营</h4>
-                    <p className="text-[#4B5563] dark:text-text-dark-secondary mb-1">2019.06 - 2020.06</p>
+                    <p className="text-[#4B5563] dark:text-text-dark-secondary mb-1">2019 - 2020</p>
                     <p className="text-[#111827] dark:text-text-dark">
                       业务方向为 ToB 员工学习解决方案，负责整体内容运营。
                       包括产品文案包装、品牌内容搭建，负责企业案例、宣传册、H5、推文、PPT 等各类内容的方案与撰写。
@@ -144,7 +136,7 @@ export default function AboutPage() {
                   </div>
                   <div className="border-l-4 border-blue-100 pl-6">
                     <h4 className="font-semibold text-[#111827] dark:text-text-dark mb-2">杭州初橙资本 · 新媒体运营</h4>
-                    <p className="text-[#4B5563] dark:text-text-dark-secondary mb-1">2017.04 - 2018.06</p>
+                    <p className="text-[#4B5563] dark:text-text-dark-secondary mb-1">2017 - 2018</p>
                     <p className="text-[#111827] dark:text-text-dark">
                       业务方向为阿里校友创业赋能服务。
                       负责新媒体矩阵搭建与账号运营，策划30天专访栏目，采访A轮以上创始人，产出多篇过万PV文章，最终活动日打造两篇10万+爆文。
@@ -198,7 +190,7 @@ export default function AboutPage() {
                     <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 mr-4 flex-shrink-0"></div>
                     <p className="text-[#111827] dark:text-text-dark">
                       <strong>浙江大学</strong> · 应用生物专业（本科）<br/>
-                      2012.08 - 2016.07 · 大三学年优秀学业奖学金
+                      2012 - 2016 · 大三学年优秀学业奖学金
                     </p>
                   </div>
                 </div>
